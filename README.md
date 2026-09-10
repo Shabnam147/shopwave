@@ -7,13 +7,8 @@ A static, responsive website for ShopWave (affordable IT & digital solutions), b
 ```
 /
 ├── index.html
-├── css/
-│   └── style.css
-├── js/
-│   └── script.js
-├── assets/
-│   ├── images/
-│   └── icons/
+├── style.css
+├── script.js
 └── README.md
 ```
 
