@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ShopWave | Affordable IT & Digital Solutions</title>
+<meta name="description" content="ShopWave provides affordable IT and digital solutions including web development, Python automation, IT support, Linux, cloud setup, and basic security services.">
+
+<!-- Open Graph -->
+<meta property="og:title" content="ShopWave | Affordable IT & Digital Solutions">
+<meta property="og:description" content="Affordable technology solutions for individuals, small businesses, freelancers, and startups — websites, Python automation, IT support, Linux, cloud setup, and basic security.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://shopwave.store">
+
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%230B1730%22/><path d=%22M25 55 L45 70 L78 32%22 stroke=%22%233D7BF5%22 stroke-width=%2210%22 fill=%22none%22 stroke-linecap=%22round%22 stroke-linejoin=%22round%22/></svg>">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.160.0/build/three.module.js"
+  }
+}
+</script>
+</head>
+<body>
+
+<!-- ================= NAVIGATION ================= -->
+<header class="nav" id="nav">
+  <div class="nav__inner container">
+    <a href="#home" class="nav__logo">
+      <span class="nav__logo-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="22" height="22"><path d="M4 13.5 L10 19 L20 5" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </span>
+      ShopWave
+    </a>
+
+    <nav class="nav__links" id="navLinks" aria-label="Primary">
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#why">About</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a href="#contact" class="btn btn--primary btn--sm nav__cta">Get a Free Quote</a>
+
+    <button class="nav__toggle" id="navToggle" aria-label="Open menu" aria-expanded="false" aria-controls="navLinks">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="home">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <div class="container hero__grid">
+      <div class="hero__content">
+        <h1 class="hero__title">Affordable IT &amp; Digital Solutions</h1>
+        <p class="hero__subtitle">We help individuals, small businesses, freelancers, and startups build, improve, and manage their digital technology — without unnecessary complexity or high costs.</p>
+
+        <div class="hero__actions">
+          <a href="#contact" class="btn btn--primary">Get a Free Quote</a>
+          <a href="#services" class="btn btn--ghost">Explore Services</a>
+        </div>
+
+        <ul class="hero__trust">
+          <li><svg viewBox="0 0 24 24" width="16" height="16"><path d="M4 13.5 L10 19 L20 5" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg> Affordable Pricing</li>
+          <li><svg viewBox="0 0 24 24" width="16" height="16"><path d="M4 13.5 L10 19 L20 5" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg> Practical Solutions</li>
+          <li><svg viewBox="0 0 24 24" width="16" height="16"><path d="M4 13.5 L10 19 L20 5" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg> Personal Support</li>
+        </ul>
+      </div>
+
+      <div class="hero__visual" id="heroVisual">
+        <canvas id="heroCanvas" class="hero__canvas" aria-hidden="true"></canvas>
+
+        <div class="terminal" id="terminalPanel">
+          <div class="terminal__bar">
+            <span class="terminal__dot terminal__dot--r"></span>
+            <span class="terminal__dot terminal__dot--y"></span>
+            <span class="terminal__dot terminal__dot--g"></span>
+            <span class="terminal__title">shopwave — zsh</span>
+          </div>
+          <div class="terminal__body" id="terminalBody"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SERVICES ================= -->
+  <section class="section" id="services">
+    <span class="glow-blob glow-blob--a" data-speed="0.15" aria-hidden="true"></span>
+    <div class="container">
+      <div class="section__head">
+        <h2>What We Can Help You With</h2>
+        <p>Practical technology solutions for your digital needs.</p>
+      </div>
+
+      <div class="services-grid">
+
+        <article class="service-card">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" width="24" height="24"><rect x="3" y="4" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M3 9h18" stroke="currentColor" stroke-width="1.6"/><circle cx="6" cy="6.5" r="0.6" fill="currentColor"/><circle cx="8.2" cy="6.5" r="0.6" fill="currentColor"/></svg>
+          </div>
+          <h3>Website &amp; Web Solutions</h3>
+          <p class="service-card__desc">Build, improve, and maintain a professional online presence.</p>
+          <ul class="service-card__list">
+            <li>Basic Business Websites</li>
+            <li>Landing Pages</li>
+            <li>Portfolio Websites</li>
+            <li>Website Fixes</li>
+            <li>Mobile Responsiveness Fixes</li>
+            <li>Website Maintenance</li>
+          </ul>
+          <a href="#contact" class="service-card__cta">Discuss Your Website <span aria-hidden="true">›</span></a>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" width="24" height="24"><path d="M8 9l-4 3 4 3M16 9l4 3-4 3M13.5 6l-3 12" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Python &amp; Automation</h3>
+          <p class="service-card__desc">Automate repetitive tasks and create small custom tools.</p>
+          <ul class="service-card__list">
+            <li>Small Python Scripts</li>
+            <li>File &amp; Data Automation</li>
+            <li>Repetitive Task Automation</li>
+            <li>Simple Custom Tools</li>
+          </ul>
+          <a href="#contact" class="service-card__cta">Automate a Task <span aria-hidden="true">›</span></a>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" width="24" height="24"><rect x="3" y="4" width="18" height="12" rx="1.5" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M8 20h8M12 16v4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M7 9l2 2-2 2M12 13h3" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>IT &amp; Linux Support</h3>
+          <p class="service-card__desc">Practical technical assistance for everyday IT and Linux needs.</p>
+          <ul class="service-card__list">
+            <li>Linux Setup</li>
+            <li>Linux Troubleshooting</li>
+            <li>Basic Server / SSH Setup</li>
+            <li>Git / GitHub Setup</li>
+            <li>General Technical Troubleshooting</li>
+          </ul>
+          <a href="#contact" class="service-card__cta">Get Technical Help <span aria-hidden="true">›</span></a>
+        </article>
+
+        <article class="service-card">
+          <div class="service-card__icon">
+            <svg viewBox="0 0 24 24" width="24" height="24"><path d="M6 17a4 4 0 0 1-1-7.9 5 5 0 0 1 9.6-1.9A4.5 4.5 0 0 1 18 17H6z" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linejoin="round"/><path d="M9 20l1.5-2h3L15 20" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Cloud &amp; Basic Security</h3>
+          <p class="service-card__desc">Basic cloud configuration and security-focused technical assistance.</p>
+          <ul class="service-card__list">
+            <li>Basic AWS Setup</li>
+            <li>IAM Configuration Assistance</li>
+            <li>Basic CloudWatch / CloudTrail Setup</li>
+            <li>Basic Security Configuration Review</li>
+            <li>Basic Website Security Checks</li>
+          </ul>
+          <a href="#contact" class="service-card__cta">Improve My Setup <span aria-hidden="true">›</span></a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PRICING (POPULAR SERVICES) ================= -->
+  <section class="section section--tint" id="pricing">
+    <div class="container">
+      <div class="section__head">
+        <h2>Simple, Affordable Pricing</h2>
+        <p>Clear starting prices. No unnecessary complexity.</p>
+      </div>
+
+      <div class="price-table">
+        <div class="price-row price-row--head">
+          <span>Service</span>
+          <span>Starting Price</span>
+        </div>
+        <div class="price-row"><span>Website / Landing Page</span><span class="price-row__amount">₹1,499</span></div>
+        <div class="price-row"><span>Business Website</span><span class="price-row__amount">₹2,999</span></div>
+        <div class="price-row"><span>Website Fixes</span><span class="price-row__amount">₹499</span></div>
+        <div class="price-row"><span>Python Script / Automation</span><span class="price-row__amount">₹999</span></div>
+        <div class="price-row"><span>Linux / IT Support</span><span class="price-row__amount">₹499</span></div>
+        <div class="price-row"><span>Git / GitHub Help</span><span class="price-row__amount">₹299</span></div>
+        <div class="price-row"><span>Basic Website Security Check</span><span class="price-row__amount">₹999</span></div>
+      </div>
+
+      <p class="price-note">Final pricing depends on project requirements and complexity. Contact us for a free quote.</p>
+    </div>
+  </section>
+
+  <!-- ================= PACKAGES ================= -->
+  <section class="section" id="packages">
+    <span class="glow-blob glow-blob--b" data-speed="0.22" aria-hidden="true"></span>
+    <div class="container">
+      <div class="section__head">
+        <h2>Packages</h2>
+        <p>Pick a starting point — every project is scoped to what you actually need.</p>
+      </div>
+
+      <div class="packages-grid">
+
+        <article class="package-card">
+          <h3 class="package-card__name">Starter</h3>
+          <p class="package-card__price">₹1,499<span>+</span></p>
+          <p class="package-card__for">For individuals and simple online needs.</p>
+          <ul class="package-card__list">
+            <li>1-page website</li>
+            <li>Mobile responsive design</li>
+            <li>Basic contact section</li>
+            <li>Basic deployment</li>
+          </ul>
+          <a href="#contact" class="btn btn--outline">Choose Starter</a>
+        </article>
+
+        <article class="package-card package-card--featured">
+          <span class="package-card__badge">Most Popular</span>
+          <h3 class="package-card__name">Business</h3>
+          <p class="package-card__price">₹2,999<span>+</span></p>
+          <p class="package-card__for">For small businesses that need a professional online presence.</p>
+          <ul class="package-card__list">
+            <li>Up to 5 pages</li>
+            <li>Responsive design</li>
+            <li>Contact form</li>
+            <li>Deployment</li>
+            <li>Basic SEO setup</li>
+          </ul>
+          <a href="#contact" class="btn btn--primary">Choose Business</a>
+        </article>
+
+        <article class="package-card">
+          <h3 class="package-card__name">Custom</h3>
+          <p class="package-card__price">₹4,999<span>+</span></p>
+          <p class="package-card__for">For custom technical requirements.</p>
+          <ul class="package-card__list">
+            <li>Custom requirements</li>
+            <li>Python / automation</li>
+            <li>Technical integrations</li>
+            <li>Cloud / IT requirements</li>
+            <li>Project-based pricing</li>
+          </ul>
+          <a href="#contact" class="btn btn--outline">Discuss a Project</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= WHO WE HELP ================= -->
+  <section class="section section--tint" id="who">
+    <div class="container">
+      <div class="section__head">
+        <h2>Who We Help</h2>
+      </div>
+
+      <div class="who-grid">
+        <article class="who-card">
+          <div class="who-card__icon">
+            <svg viewBox="0 0 24 24" width="26" height="26"><path d="M4 21V10l8-5 8 5v11" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linejoin="round"/><path d="M9 21v-6h6v6" stroke="currentColor" stroke-width="1.6" fill="none"/></svg>
+          </div>
+          <h3>Local Businesses</h3>
+          <p>Restaurants, salons, gyms, shops, tutors, consultants, and local service providers.</p>
+        </article>
+
+        <article class="who-card">
+          <div class="who-card__icon">
+            <svg viewBox="0 0 24 24" width="26" height="26"><circle cx="12" cy="8" r="3.4" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M5 20c1.2-3.8 4-5.6 7-5.6s5.8 1.8 7 5.6" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg>
+          </div>
+          <h3>Freelancers &amp; Individuals</h3>
+          <p>Portfolio websites, personal websites, technical setup, and digital solutions.</p>
+        </article>
+
+        <article class="who-card">
+          <div class="who-card__icon">
+            <svg viewBox="0 0 24 24" width="26" height="26"><path d="M12 3l3 7 7 1-5.2 4.8L18 22l-6-3.6L6 22l1.2-6.2L2 11l7-1 3-7z" stroke="currentColor" stroke-width="1.4" fill="none" stroke-linejoin="round"/></svg>
+          </div>
+          <h3>Startups</h3>
+          <p>Landing pages, basic websites, automation, technical setup, and basic cloud support.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= WHY SHOPWAVE ================= -->
+  <section class="section" id="why">
+    <div class="container">
+      <div class="section__head">
+        <h2>Why Choose ShopWave?</h2>
+      </div>
+
+      <div class="why-grid">
+        <article class="why-card">
+          <h3>Affordable</h3>
+          <p>Practical technology solutions designed around your budget.</p>
+        </article>
+        <article class="why-card">
+          <h3>Simple</h3>
+          <p>We explain technical solutions in a clear and understandable way.</p>
+        </article>
+        <article class="why-card">
+          <h3>Practical</h3>
+          <p>We focus on solving real problems instead of adding unnecessary complexity.</p>
+        </article>
+        <article class="why-card">
+          <h3>Personal Support</h3>
+          <p>Direct communication and support throughout the project.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= PORTFOLIO ================= -->
+  <section class="section section--tint" id="portfolio">
+    <span class="glow-blob glow-blob--a" data-speed="0.12" aria-hidden="true"></span>
+    <div class="container">
+      <div class="section__head">
+        <h2>Our Work</h2>
+        <p>A mix of demo and concept projects showing the kind of work ShopWave does. Real client projects will replace these as they launch.</p>
+      </div>
+
+      <div class="portfolio-filter" role="tablist" aria-label="Filter portfolio">
+        <button class="filter-btn is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="filter-btn" data-filter="web" role="tab" aria-selected="false">Web</button>
+        <button class="filter-btn" data-filter="python" role="tab" aria-selected="false">Python</button>
+        <button class="filter-btn" data-filter="it" role="tab" aria-selected="false">IT</button>
+        <button class="filter-btn" data-filter="security" role="tab" aria-selected="false">Security</button>
+      </div>
+
+      <div class="portfolio-grid" id="portfolioGrid">
+
+        <article class="portfolio-card" data-category="web">
+          <div class="portfolio-card__visual portfolio-card__visual--web" aria-hidden="true"></div>
+          <span class="portfolio-card__tag">Demo Project</span>
+          <h3>Local Business Website</h3>
+          <p>A 5-page responsive site concept for a small local service business.</p>
+          <p class="portfolio-card__tech">HTML · CSS · JavaScript</p>
+          <button class="portfolio-card__view" data-view="web1">View Project</button>
+        </article>
+
+        <article class="portfolio-card" data-category="web">
+          <div class="portfolio-card__visual portfolio-card__visual--landing" aria-hidden="true"></div>
+          <span class="portfolio-card__tag">Concept Project</span>
+          <h3>Product Landing Page</h3>
+          <p>A single-page layout built to explain one offer and drive one action.</p>
+          <p class="portfolio-card__tech">HTML · CSS</p>
+          <button class="portfolio-card__view" data-view="web2">View Project</button>
+        </article>
+
+        <article class="portfolio-card" data-category="python">
+          <div class="portfolio-card__visual portfolio-card__visual--python" aria-hidden="true"></div>
+          <span class="portfolio-card__tag">Demo Project</span>
+          <h3>Python Automation Tool</h3>
+          <p>A script concept that renames and organizes files by type automatically.</p>
+          <p class="portfolio-card__tech">Python</p>
+          <button class="portfolio-card__view" data-view="python1">View Project</button>
+        </article>
+
+        <article class="portfolio-card" data-category="it">
+          <div class="portfolio-card__visual portfolio-card__visual--it" aria-hidden="true"></div>
+          <span class="portfolio-card__tag">Concept Project</span>
+          <h3>Linux Server Setup</h3>
+          <p>A basic server and SSH configuration walkthrough for a small project.</p>
+          <p class="portfolio-card__tech">Linux · SSH</p>
+          <button class="portfolio-card__view" data-view="it1">View Project</button>
+        </article>
+
+        <article class="portfolio-card" data-category="security">
+          <div class="portfolio-card__visual portfolio-card__visual--security" aria-hidden="true"></div>
+          <span class="portfolio-card__tag">Demo Project</span>
+          <h3>Basic Security Check</h3>
+          <p>An example of a basic website security configuration review.</p>
+          <p class="portfolio-card__tech">Website Security</p>
+          <button class="portfolio-card__view" data-view="security1">View Project</button>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= HOW IT WORKS ================= -->
+  <section class="section" id="process">
+    <div class="container">
+      <div class="section__head">
+        <h2>How It Works</h2>
+      </div>
+
+      <div class="process-grid">
+        <div class="process-step">
+          <span class="process-step__num">01</span>
+          <h3>Tell Us What You Need</h3>
+          <p>Contact us and explain your problem or project.</p>
+        </div>
+        <div class="process-step">
+          <span class="process-step__num">02</span>
+          <h3>Get a Quote</h3>
+          <p>We'll understand your requirements and provide a starting estimate.</p>
+        </div>
+        <div class="process-step">
+          <span class="process-step__num">03</span>
+          <h3>We Build or Fix</h3>
+          <p>We work on the solution and keep communication clear.</p>
+        </div>
+        <div class="process-step">
+          <span class="process-step__num">04</span>
+          <h3>Deliver</h3>
+          <p>You receive the completed solution and relevant support.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FAQ ================= -->
+  <section class="section section--tint" id="faq">
+    <div class="container container--narrow">
+      <div class="section__head">
+        <h2>Frequently Asked Questions</h2>
+      </div>
+
+      <div class="faq-list">
+
+        <div class="faq-item">
+          <button class="faq-item__q" aria-expanded="false">
+            <span>What types of businesses do you work with?</span>
+            <span class="faq-item__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-item__a">
+            <p>We primarily help individuals, freelancers, local businesses, and startups.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__q" aria-expanded="false">
+            <span>How much does a website cost?</span>
+            <span class="faq-item__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-item__a">
+            <p>Website projects start from ₹1,499 depending on requirements and complexity.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__q" aria-expanded="false">
+            <span>Can you fix my existing website?</span>
+            <span class="faq-item__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-item__a">
+            <p>Yes. Small website fixes and responsive design issues start from ₹499.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__q" aria-expanded="false">
+            <span>Can you create custom Python scripts?</span>
+            <span class="faq-item__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-item__a">
+            <p>Yes. Small Python scripts and automation projects start from ₹999.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__q" aria-expanded="false">
+            <span>Do you provide cybersecurity services?</span>
+            <span class="faq-item__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-item__a">
+            <p>We provide basic website security checks and basic security configuration assistance. Advanced security testing and specialized cybersecurity services are not currently offered.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-item__q" aria-expanded="false">
+            <span>How do I get a quote?</span>
+            <span class="faq-item__icon" aria-hidden="true"></span>
+          </button>
+          <div class="faq-item__a">
+            <p>Contact ShopWave through the contact form or WhatsApp and describe what you need.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section__head">
+        <h2>Have a Project in Mind?</h2>
+        <p>Tell us what you need. We'll help you find a practical and affordable solution.</p>
+      </div>
+
+      <div class="contact-grid">
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="form-row">
+            <div class="form-field">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" required autocomplete="name">
+              <span class="form-error" id="err-name">Please enter your name.</span>
+            </div>
+            <div class="form-field">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" required autocomplete="email">
+              <span class="form-error" id="err-email">Please enter a valid email.</span>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-field">
+              <label for="phone">Phone / WhatsApp</label>
+              <input type="tel" id="phone" name="phone" required autocomplete="tel">
+              <span class="form-error" id="err-phone">Please enter a contact number.</span>
+            </div>
+            <div class="form-field">
+              <label for="service">Service Required</label>
+              <select id="service" name="service" required>
+                <option value="" disabled selected>Select a service</option>
+                <option value="website">Website / Web Solutions</option>
+                <option value="python">Python &amp; Automation</option>
+                <option value="it">IT &amp; Linux Support</option>
+                <option value="cloud">Cloud &amp; Basic Security</option>
+                <option value="other">Something Else</option>
+              </select>
+              <span class="form-error" id="err-service">Please select a service.</span>
+            </div>
+          </div>
+
+          <div class="form-field">
+            <label for="budget">Budget Range</label>
+            <select id="budget" name="budget" required>
+              <option value="" disabled selected>Select a budget range</option>
+              <option value="under-1000">Under ₹1,000</option>
+              <option value="1000-3000">₹1,000 – ₹3,000</option>
+              <option value="3000-5000">₹3,000 – ₹5,000</option>
+              <option value="5000-plus">₹5,000+</option>
+              <option value="not-sure">Not Sure Yet</option>
+            </select>
+            <span class="form-error" id="err-budget">Please select a budget range.</span>
+          </div>
+
+          <div class="form-field">
+            <label for="details">Project Details</label>
+            <textarea id="details" name="details" rows="4" required></textarea>
+            <span class="form-error" id="err-details">Please tell us a little about your project.</span>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--full">Request a Free Quote</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+
+        <div class="contact-side">
+          <a class="contact-channel" href="#" id="whatsappLink" aria-disabled="true">
+            <span class="contact-channel__icon">
+              <svg viewBox="0 0 24 24" width="22" height="22"><path d="M12 3a9 9 0 0 0-7.8 13.5L3 21l4.7-1.2A9 9 0 1 0 12 3z" stroke="currentColor" stroke-width="1.5" fill="none"/><path d="M8.5 8.7c.2-.5.5-.5.8-.5h.6c.2 0 .4 0 .6.5s.7 1.6.7 1.7.1.3 0 .5-.2.3-.4.5-.4.4-.2.7c.2.3.8 1.3 1.8 2.1 1.2 1 1.6 1 1.9.9.3-.1.7-.6.9-.9s.5-.3.8-.2 1.6.7 1.9.9.5.2.5.5-.1 1.1-.5 1.5-1.3 1-2.2 1c-1.1 0-3-.7-4.6-2.2s-2.6-3.3-2.7-4.4c-.1-.9.4-1.6.8-2z" fill="currentColor"/></svg>
+            </span>
+            <span>
+              <strong>WhatsApp Us</strong>
+              <em>Number coming soon — placeholder</em>
+            </span>
+          </a>
+
+          <a class="contact-channel" href="#" id="emailLink" aria-disabled="true">
+            <span class="contact-channel__icon">
+              <svg viewBox="0 0 24 24" width="22" height="22"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.6" fill="none"/><path d="M4 7l8 6 8-6" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+            <span>
+              <strong>Email Us</strong>
+              <em>hello@shopwave.store — placeholder</em>
+            </span>
+          </a>
+
+          <div class="contact-note">
+            <p>Contact details above are placeholders until ShopWave's official WhatsApp number and email are published. Use the form to reach out in the meantime.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="container footer__grid">
+
+    <div class="footer__brand">
+      <a href="#home" class="nav__logo footer__logo">
+        <span class="nav__logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="20" height="20"><path d="M4 13.5 L10 19 L20 5" stroke="currentColor" stroke-width="2.4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </span>
+        ShopWave
+      </a>
+      <p>Affordable IT &amp; Digital Solutions</p>
+    </div>
+
+    <div class="footer__col">
+      <h4>Site</h4>
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </div>
+
+    <div class="footer__col">
+      <h4>Services</h4>
+      <a href="#services">Web Solutions</a>
+      <a href="#services">Python &amp; Automation</a>
+      <a href="#services">IT &amp; Linux Support</a>
+      <a href="#services">Cloud &amp; Basic Security</a>
+    </div>
+
+    <div class="footer__col">
+      <h4>Connect</h4>
+      <div class="footer__social" aria-label="Social links (placeholders)">
+        <span class="social-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18"><rect x="3" y="3" width="18" height="18" rx="4" stroke="currentColor" stroke-width="1.5" fill="none"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.5" fill="none"/><circle cx="17.2" cy="6.8" r="1" fill="currentColor"/></svg></span>
+        <span class="social-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M20 7.5a7 7 0 0 1-2 .5 3.5 3.5 0 0 0 1.5-1.9 7 7 0 0 1-2.2.85A3.5 3.5 0 0 0 11 9.5c0 .27.03.53.09.78A9.9 9.9 0 0 1 4 6.9a3.5 3.5 0 0 0 1.1 4.65A3.5 3.5 0 0 1 3.5 11v.05A3.5 3.5 0 0 0 6.3 14.5a3.5 3.5 0 0 1-1.58.06 3.5 3.5 0 0 0 3.27 2.43A7 7 0 0 1 3 18.5a9.9 9.9 0 0 0 5.36 1.57c6.44 0 9.96-5.34 9.96-9.96l-.01-.45A7.1 7.1 0 0 0 20 7.5z" stroke="currentColor" stroke-width="1.1" fill="none"/></svg></span>
+        <span class="social-icon" aria-hidden="true"><svg viewBox="0 0 24 24" width="18" height="18"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z" stroke="currentColor" stroke-width="1.3" fill="none"/><rect x="2" y="9" width="4" height="12" stroke="currentColor" stroke-width="1.3" fill="none"/><circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="1.3" fill="none"/></svg></span>
+      </div>
+      <p class="footer__social-note">Social accounts coming soon</p>
+    </div>
+
+  </div>
+
+  <div class="container footer__bottom">
+    <p>© 2026 ShopWave. All rights reserved.</p>
+  </div>
+</footer>
+
+<script type="module" src="hero3d.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
